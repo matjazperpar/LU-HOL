@@ -39,5 +39,6 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-
 
 Upload, download, and list blobs with the Azure portal
 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal 
+
 Upload, download, and list blobs using the Azure CLI
 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli
