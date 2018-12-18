@@ -1,0 +1,94 @@
+az group create \
+  --name myResourceGroup \
+  --location eastus
+
+
+az network asg create \
+  --resource-group myResourceGroup \
+  --name myAsgWebServers \
+  --location eastus
+
+az network asg create \
+  --resource-group myResourceGroup \
+  --name myAsgMgmtServers \
+  --location eastus
+
+  # Create a network security group
+az network nsg create \
+  --resource-group myResourceGroup \
+  --name myNsg
+
+az network nsg rule create \
+  --resource-group myResourceGroup \
+  --nsg-name myNsg \
+  --name Allow-Web-All \
+  --access Allow \
+  --protocol Tcp \
+  --direction Inbound \
+  --priority 100 \
+  --source-address-prefix Internet \
+  --source-port-range "*" \
+  --destination-asgs "myAsgWebServers" \
+  --destination-port-range 80 443
+
+az network nsg rule create \
+  --resource-group myResourceGroup \
+  --nsg-name myNsg \
+  --name Allow-SSH-All \
+  --access Allow \
+  --protocol Tcp \
+  --direction Inbound \
+  --priority 110 \
+  --source-address-prefix Internet \
+  --source-port-range "*" \
+  --destination-asgs "myAsgMgmtServers" \
+  --destination-port-range 22
+
+  az network vnet create \
+  --name myVirtualNetwork \
+  --resource-group myResourceGroup \
+  --address-prefixes 10.0.0.0/16
+
+  az network vnet subnet create \
+  --vnet-name myVirtualNetwork \
+  --resource-group myResourceGroup \
+  --name mySubnet \
+  --address-prefix 10.0.0.0/24 \
+  --network-security-group myNsg
+
+  adminPassword="DontReadMyPassword2018!"
+
+az vm create \
+  --resource-group myResourceGroup \
+  --name myVmWeb \
+  --image UbuntuLTS \
+  --vnet-name myVirtualNetwork \
+  --subnet mySubnet \
+  --nsg "" \
+  --asgs myAsgWebServers \
+  --admin-username azureuser \
+  --admin-password $adminPassword
+
+
+az vm create \
+  --resource-group myResourceGroup \
+  --name myVmMgmt \
+  --image UbuntuLTS \
+  --vnet-name myVirtualNetwork \
+  --subnet mySubnet \
+  --nsg "" \
+  --asgs myAsgMgmtServers \
+  --admin-username azureuser \
+  --admin-password $adminPassword
+
+  ssh azureuser@<publicIpAddress>
+
+  ssh azureuser@myVmWeb
+
+  # Update package source
+sudo apt-get -y update
+
+# Install NGINX
+sudo apt-get -y install nginx
+
+curl myVmWeb

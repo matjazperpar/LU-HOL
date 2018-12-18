@@ -24,6 +24,15 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-
 
 ## Storage LABS
 
+### Create a storage account
+https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=portal
+
+### Upload, download, and list blobs
+https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal
+
+### Migrate on-premises data to cloud storage by using AzCopy
+https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-migrate-on-premises-data?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=windows
+
 ### Manage Azure disks
 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-data-disk  
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-disks 
