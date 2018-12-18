@@ -34,6 +34,21 @@ https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-t
 https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic-cli
 
 
+## Azure Monitor
+### Collect data about Azure Virtual Machines
+https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-collect-azurevm
+
+### Start Monitoring Your Node.js Web Application
+https://docs.microsoft.com/en-us/azure/application-insights/app-insights-nodejs-quick-start?toc=/azure/azure-monitor/toc.json
+
+### View or analyze data collected with Log Analytics log search
+https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-viewdata
+
+
+### Create and share dashboards of Log Analytics data
+https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-logs-dashboards
+
+
 
 
 ### ...with Portal
