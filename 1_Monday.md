@@ -1,5 +1,6 @@
 # LU-HOL Hands on Labs - MONDAY
 
+
 ## LABS - Windows
 
 ### Create a Windows virtual machine with the Azure portal
@@ -21,6 +22,9 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli
 ### Create and Manage Windows/Linux VMs with the Azure CLIl
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-vm   
 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-vm 
+
+## WebApps LABS
+
 
 ## Storage LABS
 
