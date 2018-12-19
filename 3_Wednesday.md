@@ -31,7 +31,15 @@ https://docs.docker.com/engine/examples/dotnetcore/
 
 ### Create AKS Cluster
 https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough
+
 https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal
+
+
+### Tutorial: Prepare and deploy an application to Azure Kubernetes Service (AKS)
+https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app
+
+### ADV> Quickstart: Create a Kubernetes dev space with Azure Dev Spaces (.NET Core and VS Code)
+https://docs.microsoft.com/en-us/azure/dev-spaces/quickstart-netcore?toc=%2Fen-us%2Fazure%2Faks%2FTOC.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json
 
 ## Service Fabric
 
@@ -46,3 +54,21 @@ https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-
 
 ### Deploy Windows containers to Service Fabric
 https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers
+
+
+## DevOps
+### Create a CI/CD pipeline for .NET with Azure DevOps Projects
+https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-aspnet-core?toc=%2Fen-us%2Fazure%2Fdevops-project%2Ftoc.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json
+
+### Create a CI/CD pipeline for Node.js with Azure DevOps Projects
+https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-nodejs?toc=%2Fen-us%2Fazure%2Fdevops-project%2Ftoc.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json
+
+
+### Deploy a web app to Azure App Services
+https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps?view=vsts
+
+### Deploy a Docker container app to Azure Kubernetes Service
+https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-aks?view=vsts
+
+### Tutorial: Deploy your ASP.NET Core app to Azure Service Fabric by using Azure DevOps Projects
+https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-service-fabric?toc=%2Fen-us%2Fazure%2Fdevops-project%2Ftoc.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json
