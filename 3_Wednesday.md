@@ -21,6 +21,17 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-serverle
 ### Build a serverless web app in Azure
 https://docs.microsoft.com/en-us/azure/functions/tutorial-static-website-serverless-api-with-database
 
+
+## Logic Apps
+
+### Create your first automated workflow with Azure Logic Apps - Azure portal
+https://docs.microsoft.com/en-us/azure/logic-apps/quickstart-create-first-logic-app-workflow
+
+### Automate handling emails and attachments with Azure Logic Apps
+https://docs.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow
+
+
+
 ## Docker and Kubernetes
 ### Hello world with Python
 https://docs.docker.com/get-started/part2/#dockerfile
